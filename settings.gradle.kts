@@ -10,9 +10,12 @@ pluginManagement {
         maven("https://maven.architectury.dev/") {
             name = "Architectury"
         }
+        maven("https://maven.parchmentmc.org/") {
+            name = "parchment"
+        }
     }
 }
 
 val modArchiveName: String by extra
 rootProject.name = modArchiveName
-include("common", "fabric", "neoforge")
+include("common", "fabric", "neoforge", "parchment")
